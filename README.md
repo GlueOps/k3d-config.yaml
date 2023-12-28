@@ -20,3 +20,6 @@
 ```bash
 curl https://raw.githubusercontent.com/GlueOps/k3d/main/k3d-config.yaml -o k3d-config.yaml && k3d cluster create --config k3d-config.yaml
 ```
+- Using our **lightsail AWS account** run this from a cloudshell session: `bash <(curl -s https://raw.githubusercontent.com/GlueOps/development-only-utilities/main/tools/aws/lightsail.sh)`
+- Take the output from the lightsail creation and run it against your k3s cluster.
+- Continue with the rest of the docs in your captain README.md
