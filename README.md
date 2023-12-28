@@ -13,4 +13,10 @@
 
 
 
-### Creating your cluster. Copy the k3d-config.yaml from this repo into your captain repository
+### Creating your cluster.
+
+- `cd` into your _captain_ directory
+- Run:
+```bash
+curl https://raw.githubusercontent.com/GlueOps/k3d/main/k3d-config.yaml -o k3d-config.yaml && k3d cluster create --config k3d-config.yaml
+```
