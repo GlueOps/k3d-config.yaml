@@ -1,7 +1,7 @@
 apiVersion: k3d.io/v1alpha5 
 kind: Simple 
 metadata:
-  name: mycluster
+  name: ${CAPTAIN_DOMAIN}
 servers: 1
 agents: 5
 registries:
@@ -9,8 +9,8 @@ registries:
     name: docker-io # name of the registry container
     proxy:
       remoteURL: https://registry-1.docker.io # proxy DockerHub
-      username: <DOCKER_USERNAME>
-      password: <DOCKER_PASSWORD>
+      username: ${DOCKER_USERNAME}
+      password: ${DOCKER_PASSWORD}
     volumes:
       - /tmp/reg:/var/lib/registry # persist data locally in /tmp/reg
   config: | # tell K3s to use this registry when pulling from DockerHub
