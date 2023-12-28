@@ -10,3 +10,4 @@
 
 
 
+### Creating your cluster. Copy the k3d-config.yaml from this repo into your captain repository
