@@ -2,14 +2,20 @@
 
 
 ## Requirements:
-- Get a cloud server that is either debian/ubuntu. You can use [AWS](https://cde.glueops.dev) or [Hetzner](https://www.hetzner.com/) (Recommended) or any other cloud. It's recommended you have at least 16GB of RAM but 32-64GB would be optimal.
+
+### You need a Server/VM:
+- Option #1 - A cloud server that is either debian/ubuntu. You can use [AWS](https://cde.glueops.dev) or [Hetzner](https://www.hetzner.com/) or any other cloud. It's recommended you have at least 16GB of RAM but 32-64GB would be optimal.
+- Option #2 - Proxmox. (Recommended)
+  
+### Getting setup
 - Login to your server using whatever method you like (SSH or password is fine) but you must login with a root or a user that has sudo access.
 - Run:
   ```bash
-  bash <(curl -s https://raw.githubusercontent.com/GlueOps/development-only-utilities/main/tools/developer-setup/linux-setup.sh)
+  #If you are using proxmox you will not be able to do copy/paste in the web ssh console.
+  bash <(curl -sL setup.glueops.dev)
   ```
-- Once you finish following the prompts and the server reboots, you will need to connect to it using your private ssh key with the `glueops` username.
-- Once logged in just run `dev` and select the version you want (newest is recommended) and go ahead and get started to get a code tunnel/space going.
+- Once you finish following the prompts and the server reboots, you will need to connect to it using your private ssh key with the `glueops` username. If you are using proxmox the username is `root` and you will need to switch to `glueops` using: `su - glueops`
+- Once logged in as the `glueops` user, type `cd` so that you are in `/home/glueops` and then just run `dev` and select the version you want (newest is recommended) and go ahead and get started to get a code tunnel/space going.
 
 
 
