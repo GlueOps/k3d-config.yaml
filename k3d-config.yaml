@@ -4,7 +4,7 @@ metadata:
   name: captain
 servers: 1
 agents: 5
-# registries:
+registries:
 #   create:
 #     name: docker-io # name of the registry container
 #     proxy:
@@ -18,6 +18,30 @@ agents: 5
 #       "docker.io":
 #         endpoint:
 #           - http://docker-io:5000
+  config: | 
+    mirrors:
+      "docker.io":
+        endpoint:
+          - http://49.13.66.109:5000
+      "quay.io":
+        endpoint:
+          - http://49.13.66.109:5001
+      "ghcr.io":
+        endpoint:
+          - http://49.13.66.109:5002
+      "gcr.io":
+        endpoint:
+          - http://49.13.66.109:5003
+      "public.ecr.aws":
+        endpoint:
+          - http://49.13.66.109:5004
+      "mcr.microsoft.com":
+        endpoint:
+          - http://49.13.66.109:5005
+      "registry.gitlab.com":
+        endpoint:
+          - http://49.13.66.109:5006
+          
 options:
   k3d:
     disableLoadbalancer: true
