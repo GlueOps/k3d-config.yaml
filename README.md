@@ -24,7 +24,7 @@
 - `cd` into your _captain_ directory
 - Run:
 ```bash
-curl https://raw.githubusercontent.com/GlueOps/k3d/main/k3d-config.yaml -o k3d-config.yaml && k3d cluster create --config k3d-config.yaml
+curl https://raw.githubusercontent.com/GlueOps/k3d/main/k3d-config.yaml -o k3d-config.yaml && sudo k3d cluster create --config k3d-config.yaml
 ```
 - Using our **lightsail AWS account** run this from a cloudshell session:
 ```bash
