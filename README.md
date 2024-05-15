@@ -26,7 +26,7 @@
 - Run:
 
 ```bash
-curl https://raw.githubusercontent.com/GlueOps/k3d/main/k3d-config.yaml -o k3d-config.yaml && k3d cluster create --config k3d-config.yaml && bash <(curl -sL https://raw.githubusercontent.com/GlueOps/k3d/feature/configure-node-machine-id/add-machineid.sh)
+curl https://raw.githubusercontent.com/GlueOps/k3d/main/k3d-config.yaml -o k3d-config.yaml && k3d cluster create --config k3d-config.yaml && bash <(curl -sL https://raw.githubusercontent.com/GlueOps/k3d/main/add-machineid.sh)
 ```
 
 - Using our **lightsail AWS account** run this from a cloudshell session:
