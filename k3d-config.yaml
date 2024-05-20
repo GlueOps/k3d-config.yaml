@@ -3,7 +3,7 @@ kind: Simple
 metadata:
   name: captain
 servers: 1
-agents: 5
+agents: 6
 image: rancher/k3s:v1.28.9-k3s1
 registries:
 #   create:
@@ -64,3 +64,6 @@ options:
       - label: glueops.dev/role=glueops-platform 
         nodeFilters:
           - agent:1,2,3
+      - label: glueops.dev/role=glueops-platform-argocd-app-controller
+        nodeFilters:
+          - agent:4
