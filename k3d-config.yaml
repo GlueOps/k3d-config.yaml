@@ -23,25 +23,25 @@ registries:
     mirrors:
       "docker.io":
         endpoint:
-          - http://49.13.66.109:5000
+          - http://dev-only-registry.onglueopshosted.com:5000
       "quay.io":
         endpoint:
-          - http://49.13.66.109:5001
+          - http://dev-only-registry.onglueopshosted.com:5001
       "ghcr.io":
         endpoint:
-          - http://49.13.66.109:5002
+          - http://dev-only-registry.onglueopshosted.com:5002
       "gcr.io":
         endpoint:
-          - http://49.13.66.109:5003
+          - http://dev-only-registry.onglueopshosted.com:5003
       "public.ecr.aws":
         endpoint:
-          - http://49.13.66.109:5004
+          - http://dev-only-registry.onglueopshosted.com:5004
       "mcr.microsoft.com":
         endpoint:
-          - http://49.13.66.109:5005
+          - http://dev-only-registry.onglueopshosted.com:5005
       "registry.gitlab.com":
         endpoint:
-          - http://49.13.66.109:5006
+          - http://dev-only-registry.onglueopshosted.com:5006
           
 options:
   k3d:
