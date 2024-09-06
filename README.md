@@ -17,8 +17,8 @@
   bash <(curl -sL setup.glueops.dev)
   ```
 
-- Once you finish following the prompts and the server reboots, you will need to connect to it using your private ssh key with the `glueops` username. If you are using proxmox the username is `root` and you will need to switch to `glueops` using: `su - glueops`
-- Once logged in as the `glueops` user, type `cd` so that you are in `/home/glueops` and then just run `dev` and select the version you want (newest is recommended) and go ahead and get started to get a code tunnel/space going.
+- Once you finish following the prompts and the server reboots, you will need to connect to it using your private ssh key with the `vscode` username. If you are using proxmox the username is `root` and you will need to switch to `vscode` using: `su - vscode`
+- Once logged in as the `vscode` user, type `cd` so that you are in `/home/vscode` and then just run `dev` and select the version you want (newest is recommended) and go ahead and get started to get a code tunnel/space going.
 
 ### Creating your cluster
 
