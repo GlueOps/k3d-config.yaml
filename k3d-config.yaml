@@ -45,6 +45,7 @@ registries:
       "registry.k8s.io":
         endpoint:
           - http://dev-only-registry.glueopshosted.com:5007
+          
 options:
   k3d:
     disableLoadbalancer: true
