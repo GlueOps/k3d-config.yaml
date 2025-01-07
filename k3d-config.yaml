@@ -42,6 +42,9 @@ registries:
       "registry.gitlab.com":
         endpoint:
           - http://dev-only-registry.glueopshosted.com:5006
+      "registry.k8s.io":
+        endpoint:
+          - http://dev-only-registry.glueopshosted.com:5007
           
 options:
   k3d:
